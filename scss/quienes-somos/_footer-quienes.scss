@@ -1,0 +1,51 @@
+.footer {
+    background-color: white;
+
+    .contenedor_footer {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .titulo_footer {
+            color: black;
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+
+        }
+    }
+
+    .redes_sociales {
+        display: flex;
+        justify-content: center;
+
+        >a {
+            font-size: 20px;
+            padding: 0 20px 0 20px;
+            color: white;
+        } 
+
+        .facebook,
+        .instagram,
+        .linkedin {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+
+            &:hover {
+                box-shadow: 0px 4px 8px 0px rgba(31, 13, 195, 0.419);
+            }
+        }
+    }
+
+    .copy {
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}

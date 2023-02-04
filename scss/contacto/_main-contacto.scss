@@ -1,0 +1,88 @@
+.contacto_contacto {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: $colorsecundaria;
+    color: white;
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 50px;
+    display: grid;
+    gap: 25px;
+    grid:
+        "titulo1 formulario1" auto "detalles1 formulario1" 1fr "social1 formulario1" auto / 1fr 1fr;
+    align-items: flex-start;
+
+    p,
+    h2,
+    ul {
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .contacto_titulo {
+
+        text-align: center;
+        text-transform: uppercase;
+        grid-area: titulo1;
+    }
+
+    .contacto_detalles {
+        display: grid;
+        gap: 20px;
+        grid-area: detalles1;
+
+        .contacto_detalles_grupo {
+            display: grid;
+            gap: 3px;
+
+            .contacto_label {
+                text-transform: uppercase;
+                font-weight: 300px;
+            }
+        }
+    }
+
+    .contacto_formulario {
+        display: grid;
+        gap: 3px;
+        grid-area: formulario1;
+
+        .contacto_formulario_grupo {
+            display: grid;
+            gap: 20px;
+            margin: 5px;
+
+            input,
+            textarea {
+                border-radius: 7px;
+                border: none;
+                height: 30px;
+                width: 100%;
+                padding: 5px 10px;
+            }
+
+            textarea {
+                height: auto;
+                resize: vertical;
+            }
+        }
+
+        .boton_submit {
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+            background-color: $colorprincipal;
+            color: white;
+            border-radius: 1px solid $colorprincipal;
+
+            &:hover {
+                box-shadow: 0 0 14px white
+            }
+        }
+    }
+}

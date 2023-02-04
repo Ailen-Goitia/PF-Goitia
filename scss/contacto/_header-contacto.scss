@@ -1,0 +1,67 @@
+header {
+    .menu_navegacion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+        padding: 0;
+
+        div {
+
+            a {
+
+                .logo_ag {
+                    display: block;
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+        }
+        .enlaces {
+
+            li {
+                list-style: none;
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding-left: 10px;
+
+                }
+            }
+        }
+
+
+    }
+
+    .hero {
+        height: 200px;
+        width: 100%;
+        background-image: url(../assets/images/cascos.jpg.webp);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+
+
+        .contenedor_textos {
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .titulo_hero {
+                background-color: $colorprincipal;
+                color: white;
+                font-size: xx-large;
+                align-items: center;
+                justify-content: center; 
+            }
+        }
+    }
+
+}

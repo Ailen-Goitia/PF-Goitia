@@ -1,0 +1,70 @@
+.container_proteccion {
+    @extend %cajitas;
+
+    .cards_proteccion {
+        background-color: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+        -webkit-animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+        animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+
+        &:hover {
+            box-shadow: 0 0 14px white;
+            transition: all 1s;
+        }
+
+        .imagen_section_proteccion {
+            height: 225px;
+            background-color: blue;
+        }
+
+        .img_proteccion_uno {
+            background-image: url(../assets/images/medicion2.jpg);
+            @extend %cards-imagenes;
+        }
+
+        .img_proteccion_dos {
+            background-image: url(../assets/images/fire-2086370_1920-678x381.jpeg);
+            @extend %cards-imagenes;
+        }
+
+        .img_proteccion_tres {
+            background-image: url(../assets/images/iluminacion2.jpeg);
+            @extend %cards-imagenes;
+        }
+
+        .contenido_proteccion {
+            padding: 15px;
+            text-align: center;
+
+            p {  margin: 15px 0px;
+                font-size: 15px;
+              }
+        }
+
+    }
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}

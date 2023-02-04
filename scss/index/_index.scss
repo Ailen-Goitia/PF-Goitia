@@ -1,0 +1,73 @@
+.contenedor {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "logo logo quienessomos areasdepractica"
+        "logo logo sistemadeautoproteccion contacto_index";
+    gap: 1px;
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .logo {
+        grid-area: logo;
+        background-color: $colorprincipal;
+
+    }
+
+    .quienessomos {
+        grid-area: quienessomos;
+        background-color: $colorsecundaria;
+
+        .titulo {
+            color: white;
+            font-size: large;
+        }
+    }
+
+    .sistemadeautoproteccion {
+        grid-area: sistemadeautoproteccion;
+        background-color: $colorsecundaria;
+
+        .titulo {
+            color: white;
+            font-size: large;
+        }
+
+
+    }
+
+    .areasdepractica {
+        grid-area: areasdepractica;
+        background-color: $colorsecundaria;
+
+        .titulo {
+            color: white;
+            font-size: large;
+        }
+
+
+    }
+
+    .contacto_index {
+        grid-area: contacto_index;
+        background-color: $colorsecundaria;
+
+        .titulo {
+            color: white;
+            font-size: large;
+        }
+
+
+    }
+}

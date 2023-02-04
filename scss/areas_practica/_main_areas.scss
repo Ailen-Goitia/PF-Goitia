@@ -1,0 +1,91 @@
+.container {
+    @extend %cajitas;
+
+    .cards {
+        background-color: #fff;
+
+        -webkit-animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+        animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0px 4px 8px 0px rgb(255, 255, 255);
+        }
+
+        .imagen_section {
+            height: 225px;
+            background-color: rgb(21, 76, 158);
+        }
+
+        .img_uno {
+            background-image: url(../assets/images/comercio3.jpeg);
+            @extend %cards-imagenes;
+        }
+
+        .contenido {
+            padding: 15px;
+            text-align: center;
+
+            h2 {
+                letter-spacing: 1.5px;
+            }
+
+            p {
+                margin: 15px 0px;
+                font-size: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 17px;
+                color: #fff;
+                letter-spacing: 1.5px;
+                display: inline-block;
+                background-color: $colorprincipal;
+                padding: 8px 15px;
+
+                &:hover {
+                    background-color: $colorsecundaria;
+                    color: white;
+                    transition: 1s ease;
+                    box-shadow: 0px 4px 8px 0px rgb(11, 29, 103);
+                }
+            }
+        }
+
+        .img_dos {
+            background-image: url(../assets/images/puesta-a-tierra.jpeg);
+            @extend %cards-imagenes;
+        }
+
+        .img_tres {
+            background-image: url(../assets/images/obra3.jpeg);
+            @extend %cards-imagenes;
+        }
+
+    }
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}

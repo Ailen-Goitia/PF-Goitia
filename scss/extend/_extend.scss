@@ -1,0 +1,13 @@
+%cards-imagenes{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+%cajitas{
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}

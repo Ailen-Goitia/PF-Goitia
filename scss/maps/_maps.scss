@@ -1,0 +1,11 @@
+$redes: (
+    facebook: rgb(25, 25, 169),
+    instagram: rgb(171, 38, 162),
+    linkedin: rgb(0, 0, 255),
+);
+
+@each $redsocial,$colordered in $redes{
+    .fa-#{$redsocial}{
+        background-color: $colordered;
+    }
+}

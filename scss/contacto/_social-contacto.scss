@@ -1,0 +1,28 @@
+.social {
+    grid-area: social1;
+    padding-left: 25px;
+    padding-right: 25px;   
+
+    .lista_redes_sociales {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+
+        .red_item {
+
+            .facebook_contacto,
+            .instagram_contacto,
+            .linkedin_contacto {
+                color: white;
+                background-color:$colorprincipal;
+                padding: 5px;
+                border-radius: 2px;
+
+                &:hover {
+                    box-shadow: 0 0 14px white;
+                }
+            }
+        }
+    }
+}
