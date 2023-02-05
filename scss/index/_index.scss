@@ -8,14 +8,17 @@
         "logo logo quienessomos areasdepractica"
         "logo logo sistemadeautoproteccion contacto_index";
     gap: 1px;
+
     >div {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 1s;
-
+        font-family: 'Merriweather', serif;
+        -webkit-animation: bounce-in-top 1.1s both;
+        animation: bounce-in-top 1.1s both;
         &:hover {
-            transform: scale(1.1);
+            box-shadow: 0 0 50px white;
+            transition: all 1s;
         }
     }
 
@@ -69,5 +72,11 @@
         }
 
 
+    }
+    @for $menus from 1 through 5 {
+
+        .menu_#{$menus} {
+            animation-delay: $menus*0.3s;
+        }
     }
 }

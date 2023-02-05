@@ -21,7 +21,7 @@
         }
 
         .img_uno_quienes {
-            background-image: url(../assets/images/marcos.png);
+            background-image: url(../assets/images/marcos.jpg);
             @extend %cards-imagenes;
         }
 
@@ -58,7 +58,7 @@
         }
 
         .img_dos_quienes {
-            background-image: url(../assets/images/melina.png);
+            background-image: url(../assets/images/melina.jpg);
             @extend %cards-imagenes;
         }
 
@@ -95,7 +95,118 @@
         }
 
         .img_tres_quienes {
-            background-image: url(../assets/images/ailen2.png);
+            background-image: url(../assets/images/ailen.jpg);
+            @extend %cards-imagenes;
+        }
+
+        .contenido_quienes {
+            padding: 15px;
+            text-align: center;
+
+            h2 {
+                letter-spacing: 1.5px;
+
+                h3 {
+                    margin: 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+    .cards_quienes {
+        background-color: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            box-shadow: 0 0 14px white;
+            transition: all 1s;
+        }
+
+        .imagen_section_quienes {
+            height: 225px;
+            background-color: blue;
+
+
+        }
+
+        .img_cuatro_quienes {
+            background-image: url(../assets/images/miguel.jpg);
+            @extend %cards-imagenes;
+        }
+
+        .contenido_quienes {
+            padding: 15px;
+            text-align: center;
+
+            h2 {
+                letter-spacing: 1.5px;
+
+                h3 {
+                    margin: 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+    .cards_quienes {
+        background-color: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            box-shadow: 0 0 14px white;
+            transition: all 1s;
+        }
+
+        .imagen_section_quienes {
+            height: 225px;
+            background-color: blue;
+
+
+        }
+
+        .img_cinco_quienes {
+            background-image: url(../assets/images/daniel.jpg);
+            @extend %cards-imagenes;
+        }
+
+        .contenido_quienes {
+            padding: 15px;
+            text-align: center;
+
+            h2 {
+                letter-spacing: 1.5px;
+
+                h3 {
+                    margin: 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+    .cards_quienes {
+        background-color: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            box-shadow: 0 0 14px white;
+            transition: all 1s;
+        }
+
+        .imagen_section_quienes {
+            height: 225px;
+            background-color: blue;
+
+
+        }
+
+        .img_seis_quienes {
+            background-image: url(../assets/images/maria.jpg);
             @extend %cards-imagenes;
         }
 

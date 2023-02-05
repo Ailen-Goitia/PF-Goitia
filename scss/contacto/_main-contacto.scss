@@ -14,6 +14,7 @@
     grid:
         "titulo1 formulario1" auto "detalles1 formulario1" 1fr "social1 formulario1" auto / 1fr 1fr;
     align-items: flex-start;
+    font-family: 'Merriweather', serif;
 
     p,
     h2,
@@ -79,6 +80,7 @@
             background-color: $colorprincipal;
             color: white;
             border-radius: 1px solid $colorprincipal;
+            font-family: 'Merriweather', serif;
 
             &:hover {
                 box-shadow: 0 0 14px white

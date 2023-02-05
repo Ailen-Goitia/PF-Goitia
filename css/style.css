@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,9 +22,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s; }
+    font-family: 'Merriweather', serif;
+    -webkit-animation: bounce-in-top 1.1s both;
+    animation: bounce-in-top 1.1s both; }
     .contenedor > div:hover {
-      transform: scale(1.1); }
+      box-shadow: 0 0 50px white;
+      transition: all 1s; }
   .contenedor .logo {
     grid-area: logo;
     background-color: #0a267c; }
@@ -51,6 +55,16 @@ a {
     .contenedor .contacto_index .titulo {
       color: white;
       font-size: large; }
+  .contenedor .menu_1 {
+    animation-delay: 0.3s; }
+  .contenedor .menu_2 {
+    animation-delay: 0.6s; }
+  .contenedor .menu_3 {
+    animation-delay: 0.9s; }
+  .contenedor .menu_4 {
+    animation-delay: 1.2s; }
+  .contenedor .menu_5 {
+    animation-delay: 1.5s; }
 
 .container_quienes .cards_quienes {
   background-color: #fff;
@@ -64,7 +78,7 @@ a {
     height: 225px;
     background-color: blue; }
   .container_quienes .cards_quienes .img_uno_quienes {
-    background-image: url(../assets/images/marcos.png); }
+    background-image: url(../assets/images/marcos.jpg); }
   .container_quienes .cards_quienes .contenido_quienes {
     padding: 15px;
     text-align: center; }
@@ -84,7 +98,7 @@ a {
     height: 225px;
     background-color: blue; }
   .container_quienes .cards_quienes .img_dos_quienes {
-    background-image: url(../assets/images/melina.png); }
+    background-image: url(../assets/images/melina.jpg); }
   .container_quienes .cards_quienes .contenido_quienes {
     padding: 15px;
     text-align: center; }
@@ -104,7 +118,67 @@ a {
     height: 225px;
     background-color: blue; }
   .container_quienes .cards_quienes .img_tres_quienes {
-    background-image: url(../assets/images/ailen2.png); }
+    background-image: url(../assets/images/ailen.jpg); }
+  .container_quienes .cards_quienes .contenido_quienes {
+    padding: 15px;
+    text-align: center; }
+    .container_quienes .cards_quienes .contenido_quienes h2 {
+      letter-spacing: 1.5px; }
+      .container_quienes .cards_quienes .contenido_quienes h2 h3 {
+        margin: 15px;
+        font-size: 15px; }
+
+.container_quienes .cards_quienes {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); }
+  .container_quienes .cards_quienes:hover {
+    box-shadow: 0 0 14px white;
+    transition: all 1s; }
+  .container_quienes .cards_quienes .imagen_section_quienes {
+    height: 225px;
+    background-color: blue; }
+  .container_quienes .cards_quienes .img_cuatro_quienes {
+    background-image: url(../assets/images/miguel.jpg); }
+  .container_quienes .cards_quienes .contenido_quienes {
+    padding: 15px;
+    text-align: center; }
+    .container_quienes .cards_quienes .contenido_quienes h2 {
+      letter-spacing: 1.5px; }
+      .container_quienes .cards_quienes .contenido_quienes h2 h3 {
+        margin: 15px;
+        font-size: 15px; }
+
+.container_quienes .cards_quienes {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); }
+  .container_quienes .cards_quienes:hover {
+    box-shadow: 0 0 14px white;
+    transition: all 1s; }
+  .container_quienes .cards_quienes .imagen_section_quienes {
+    height: 225px;
+    background-color: blue; }
+  .container_quienes .cards_quienes .img_cinco_quienes {
+    background-image: url(../assets/images/daniel.jpg); }
+  .container_quienes .cards_quienes .contenido_quienes {
+    padding: 15px;
+    text-align: center; }
+    .container_quienes .cards_quienes .contenido_quienes h2 {
+      letter-spacing: 1.5px; }
+      .container_quienes .cards_quienes .contenido_quienes h2 h3 {
+        margin: 15px;
+        font-size: 15px; }
+
+.container_quienes .cards_quienes {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); }
+  .container_quienes .cards_quienes:hover {
+    box-shadow: 0 0 14px white;
+    transition: all 1s; }
+  .container_quienes .cards_quienes .imagen_section_quienes {
+    height: 225px;
+    background-color: blue; }
+  .container_quienes .cards_quienes .img_seis_quienes {
+    background-image: url(../assets/images/maria.jpg); }
   .container_quienes .cards_quienes .contenido_quienes {
     padding: 15px;
     text-align: center; }
@@ -278,27 +352,6 @@ header .menu_navegacion {
       color: white;
       padding-left: 10px; }
 
-header .hero {
-  height: 200px;
-  width: 100%;
-  background-image: url(../assets/images/cascos.jpg.webp);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
-  header .hero .contenedor_textos {
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    header .hero .contenedor_textos .titulo_hero {
-      background-color: #0a267c;
-      color: white;
-      font-size: xx-large;
-      align-items: center;
-      justify-content: center; }
-
 .contacto_contacto {
   padding-left: 10px;
   padding-right: 10px;
@@ -313,7 +366,8 @@ header .hero {
   display: grid;
   gap: 25px;
   grid: "titulo1 formulario1" auto "detalles1 formulario1" 1fr "social1 formulario1" auto / 1fr 1fr;
-  align-items: flex-start; }
+  align-items: flex-start;
+  font-family: 'Merriweather', serif; }
   .contacto_contacto p,
   .contacto_contacto h2,
   .contacto_contacto ul {
@@ -357,7 +411,8 @@ header .hero {
       margin-top: 20px;
       background-color: #0a267c;
       color: white;
-      border-radius: 1px solid #0a267c; }
+      border-radius: 1px solid #0a267c;
+      font-family: 'Merriweather', serif; }
       .contacto_contacto .contacto_formulario .boton_submit:hover {
         box-shadow: 0 0 14px white; }
 
@@ -390,7 +445,8 @@ header .menu_navegacion {
   margin: auto;
   overflow: hidden;
   padding: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-family: 'Merriweather', serif; }
   header .menu_navegacion div a .logo_ag {
     display: block;
     height: 60px;
@@ -417,7 +473,8 @@ header .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    font-family: 'Merriweather', serif; }
     header .hero .contenedor_textos .titulo_hero {
       background-color: #0a267c;
       color: white;
@@ -526,7 +583,7 @@ header .hero {
 .fa-linkedin {
   background-color: blue; }
 
-.container_quienes .cards_quienes .img_uno_quienes, .container_quienes .cards_quienes .img_dos_quienes, .container_quienes .cards_quienes .img_tres_quienes, .container .cards .img_uno, .container .cards .img_dos, .container .cards .img_tres, .container_proteccion .cards_proteccion .img_proteccion_uno, .container_proteccion .cards_proteccion .img_proteccion_dos, .container_proteccion .cards_proteccion .img_proteccion_tres {
+.container_quienes .cards_quienes .img_uno_quienes, .container_quienes .cards_quienes .img_dos_quienes, .container_quienes .cards_quienes .img_tres_quienes, .container_quienes .cards_quienes .img_cuatro_quienes, .container_quienes .cards_quienes .img_cinco_quienes, .container_quienes .cards_quienes .img_seis_quienes, .container .cards .img_uno, .container .cards .img_dos, .container .cards .img_tres, .container_proteccion .cards_proteccion .img_proteccion_uno, .container_proteccion .cards_proteccion .img_proteccion_dos, .container_proteccion .cards_proteccion .img_proteccion_tres {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }

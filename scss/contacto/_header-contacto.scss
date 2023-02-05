@@ -37,31 +37,4 @@ header {
 
     }
 
-    .hero {
-        height: 200px;
-        width: 100%;
-        background-image: url(../assets/images/cascos.jpg.webp);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-
-
-        .contenedor_textos {
-            padding: 0;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .titulo_hero {
-                background-color: $colorprincipal;
-                color: white;
-                font-size: xx-large;
-                align-items: center;
-                justify-content: center; 
-            }
-        }
-    }
-
 }
